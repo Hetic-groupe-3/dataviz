@@ -15,10 +15,10 @@
 * Le nombre de gares
 * Le nombre de passagers par an
 ## Pour les retards, les éléments de comparaisons seront :
-*Les incidents
-*Les effectifs
-*La vitesse
-*L'affluence
+* Les incidents
+* Les effectifs
+* La vitesse
+* L'affluence
 
 ## With Laravel framework
 
