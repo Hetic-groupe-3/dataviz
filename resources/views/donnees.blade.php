@@ -307,7 +307,7 @@
         <!-- Partie graphiques -->
 
         <section class="donnees" id="sect-all">
-            <h1>TGV vs Train allemand</h1>
+            <h1>TGV vs Train Allemand</h1>
 
             <!-- Partie comparaison vitesse -->
 
@@ -827,7 +827,7 @@
         <!-- Partie graphiques -->
 
         <section class="donnees" id="sect-bel">
-            <h1>TGV vs Shinkansen</h1>
+            <h1>TGV vs Train Belge</h1>
 
             <!-- Partie comparaison vitesse -->
 
