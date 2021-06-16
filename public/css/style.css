@@ -2,52 +2,52 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-*::selection{
+*::selection {
     background-color: #425FC6;
     color: white;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-h1{
+h1 {
     text-transform: uppercase;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-html{
+html {
     font-family: 'Sen', sans-serif;
     scroll-behavior: smooth;
 }
 
 /* ---------- Header ---------- */
 
-header{
+header {
     height: 100vh;
     width: 100vw;
     background-color: #425FC6;
-    background-image: url('assets/fond-head.jpg');
+    background-image: url("/img/fond-head.jpg");
     background-position: 100% 70%;
 }
 
 /* Bouton notre équipe */
 
-.top-content a{
+.top-content a {
     position: absolute;
     right: 30px;
     top: 30px;
@@ -62,7 +62,7 @@ header{
     transition: background-color .5s, color .5s;
 }
 
-.top-content a:hover{
+.top-content a:hover {
     background-color: white;
     border: 1px solid #425FC6;
     color: black;
@@ -70,7 +70,7 @@ header{
 
 /* Titre du header */
 
-.title{
+.title {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -81,50 +81,50 @@ header{
     flex-direction: column;
 }
 
-.title h1:nth-child(2){
+.title h1:nth-child(2) {
     margin-right: 280px;
 }
 
-.title h1:nth-child(3){
+.title h1:nth-child(3) {
     margin-left: 400px;
 }
 
-.title hr:nth-child(1){
+.title hr:nth-child(1) {
     width: 70%;
     margin-right: 450px;
 }
 
-.title hr:nth-child(4){
+.title hr:nth-child(4) {
     width: 62%;
     margin-left: 550px;
 }
 
 /* Elements bas du header */
 
-.bot-content{
+.bot-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
 }
 
-.bot-content p:nth-child(1){
+.bot-content p:nth-child(1) {
     position: absolute;
     bottom: 30px;
     left: 30px;
-    font-weight:700;
+    font-weight: 700;
 }
 
-.bot-content p:nth-child(2){
+.bot-content p:nth-child(2) {
     position: absolute;
     bottom: 30px;
     right: 30px;
-    font-weight:700;
+    font-weight: 700;
     font-size: 2em;
     color: white;
 }
 
-.scroll-top{
+.scroll-top {
     position: absolute;
     bottom: 30px;
     display: flex;
@@ -133,7 +133,7 @@ header{
     transform: translateX(-50%);
 }
 
-.scroll-top a{
+.scroll-top a {
     height: 50px;
     width: 50px;
     background-color: white;
@@ -146,12 +146,12 @@ header{
     overflow: hidden;
 }
 
-.scroll-top p{
+.scroll-top p {
     font-weight: 700;
     color: white;
 }
 
-.scroll-top a::before{
+.scroll-top a::before {
     content: "";
     height: 30%;
     width: 30%;
@@ -163,13 +163,13 @@ header{
     transition: transform 1s;
 }
 
-.scroll-top a:hover::before{
+.scroll-top a:hover::before {
     transform: translateY(50px) rotate(45deg);
 }
 
 /* Map selection */
 
-.map > div{
+.map>div {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -179,24 +179,27 @@ header{
     margin-left: -100px;
 }
 
-.map-selection{
+.map-selection {
     width: 100%;
     padding-left: 150px;
     height: 100%;
 }
 
-.map-selection h1{
+.map-selection h1 {
     position: absolute;
     margin-top: 30px;
 }
 
-.map-belgique h1, .map-japon h1, .map-allemagne h1, .map-russie h1{
+.map-belgique h1,
+.map-japon h1,
+.map-allemagne h1,
+.map-russie h1 {
     position: relative;
     top: 200px;
     left: 30%;
 }
 
-.map svg{
+.map svg {
     position: relative;
     height: 300px;
     width: 300px;
@@ -209,38 +212,39 @@ header{
     margin-left: 20px;
 }
 
-.map path{
+.map path {
     transition: fill .2s;
 }
 
-.map svg path:hover{
+.map svg path:hover {
     fill: #425FC6;
     cursor: pointer;
 }
 
 /* Comparaison des compagnies */
 
-.compare{
+.compare {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url('assets/fond-compar.png');
+    background-image: url("/img/fond-compar.png");
     background-size: 55% 100%;
     background-repeat: no-repeat;
     background-position: right;
 }
 
-.data-fr, .data-autre{
+.data-fr,
+.data-autre {
     height: 100%;
     width: 50%;
 }
 
-.intro-content{
+.intro-content {
     height: 100vh;
     width: 100vw;
 }
 
-.intro{
+.intro {
     height: 100%;
     width: 100%;
     display: flex;
@@ -249,63 +253,66 @@ header{
     margin-top: 50px;
 }
 
-.trajet{
+.trajet {
     border-bottom: 2px solid #425FC6;
 }
 
-.donnees{
+.donnees {
     height: 100vh;
     width: 100vw;
     position: relative;
 }
 
-.donnees a{
+.donnees a {
     cursor: pointer;
 }
 
-.intro h1, .data-fr h1, .data-compare-autre h1, .vitesse h1{
+.intro h1,
+.data-fr h1,
+.data-compare-autre h1,
+.vitesse h1 {
     padding-top: 20px;
     padding-left: 50px;
 }
 
-.data-fr h1{
+.data-fr h1 {
     color: #425FC6;
 }
 
-.data-compare-autre h1{
+.data-compare-autre h1 {
     color: white;
 }
 
-.intro h1{
+.intro h1 {
     font-size: 3em;
 }
 
-.text-intro{
+.text-intro {
     width: 600px;
     margin-top: 40px;
     text-align: center;
 }
 
-.text-intro p{
+.text-intro p {
     font-size: 1.5em;
 }
 
-.slide-citation{
+.slide-citation {
     margin-top: 300px;
     font-size: 1.2em;
     color: rgb(158, 158, 158);
     width: 100%;
 }
 
-.slide-citation span{
+.slide-citation span {
     color: #425FC6;
 }
 
-.slide-citation ul{
+.slide-citation ul {
     text-align: center;
 }
 
-.slide-citation button{
+.slide-citation button {
     background-color: #C4C4C4;
     border-radius: 50%;
     height: 17px;
@@ -316,21 +323,23 @@ header{
     font-size: 0;
 }
 
-.slide-citation button:active{
+.slide-citation button:active {
     background-color: #425FC6;
 }
 
-.slide-citation button:hover{
+.slide-citation button:hover {
     cursor: pointer;
 }
 
-.slick-dots{
+.slick-dots {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 20px;
 }
-.carre-fr, .carre-autre{
+
+.carre-fr,
+.carre-autre {
     height: 75px;
     width: 75px;
     display: flex;
@@ -338,98 +347,100 @@ header{
     align-items: center;
 }
 
-.liste-data-fr li, .liste-data-autre li{
+.liste-data-fr li,
+.liste-data-autre li {
     display: flex;
     align-items: center;
     margin: 50px;
     padding-top: 10px;
 }
 
-.liste-data-fr p:nth-child(1){
+.liste-data-fr p:nth-child(1) {
     font-size: 1.5em;
     margin-left: 30px;
     color: #425FC6;
 }
 
-.liste-data-fr p:nth-child(2){
+.liste-data-fr p:nth-child(2) {
     margin-left: 30px;
 }
 
-.liste-data-autre p:nth-child(1){
+.liste-data-autre p:nth-child(1) {
     font-size: 1.5em;
     margin-left: 30px;
     color: white;
 }
 
-.liste-data-autre p:nth-child(2){
+.liste-data-autre p:nth-child(2) {
     margin-left: 30px;
 }
 
-.carre-autre img{
+.carre-autre img {
     height: 50px;
     width: 50px;
 }
 
-.carre-fr img{
+.carre-fr img {
     height: 50px;
     width: 50px;
 }
 
-.link a{
+.link a {
     font-size: 1.5em;
     color: #425FC6;
     font-weight: 700;
 }
 
-.link a.not-active{
+.link a.not-active {
     color: black;
     font-weight: 500;
 }
 
-.link li:nth-child(1){
+.link li:nth-child(1) {
     margin-left: 50px;
 }
 
-.link li{
+.link li {
     margin-top: 10px;
     padding-right: 20px;
 }
 
-.link ul{
+.link ul {
     display: flex;
     list-style-type: none;
 }
 
 .link li.not-active {
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
-.ligne1{
+.ligne1 {
     width: 100%;
     height: 150px;
     margin-top: 100px;
     border-top: solid 2px black;
 }
 
-.ligne2{
+.ligne2 {
     width: 100%;
     height: 150px;
     margin-top: 30px;
     border-top: solid 2px black;
 }
 
-.ligne1 img{
+.ligne1 img {
     height: 180px;
     margin-top: -45px;
     margin-left: 800px;
 
 }
-.ligne2 img{
+
+.ligne2 img {
     height: 180px;
     margin-top: -45px;
 }
 
-.data-train{
+.data-train {
     position: absolute;
     width: 100%;
     height: 35%;
@@ -439,78 +450,84 @@ header{
     justify-content: space-around;
 }
 
-.data-train span{
- color: #425FC6;
+.data-train span {
+    color: #425FC6;
 }
 
-.data-tgv, .data-autre{
+.data-tgv,
+.data-autre {
     width: 30%;
     height: 100%;
     display: flex;
     padding: 20px;
 }
 
-.data-train ul{
+.data-train ul {
     list-style: none;
 }
 
-.data-train li{
+.data-train li {
     margin-top: 50px;
 }
-.affichage{
-    display: block;
-}
-.affichage2{
+
+.affichage {
     display: block;
 }
 
-.affichage3{
+.affichage2 {
     display: block;
 }
-.affichage4{
+
+.affichage3 {
     display: block;
 }
-.cache{
+
+.affichage4 {
+    display: block;
+}
+
+.cache {
     display: none;
 }
 
-.graph1{
+.graph1 {
     height: 80%;
     width: 90%;
     margin-top: 25px;
     margin-left: 50px;
 }
 
-.graph2{
+.graph2 {
     height: 40%;
     width: 40%;
     padding-top: 75px;
     margin: auto;
 }
 
-.team{
+.team {
     height: 100vh;
     width: 100vw;
 }
 
-.top-team-content{
+.top-team-content {
     width: 100%;
     height: 20px;
     padding: 20px;
 }
 
-.top-team-content span{
+.top-team-content span {
     color: #C4C4C4;
 }
 
-.main-team-content{
+.main-team-content {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     height: 90%;
 }
 
-.main-team-content .p1, .main-team-content .p2{
+.main-team-content .p1,
+.main-team-content .p2 {
     height: 500px;
     width: 400px;
     display: flex;
@@ -518,49 +535,53 @@ header{
     flex-direction: column;
 }
 
-.circle{
+.circle {
     height: 200px;
     width: 200px;
     background-color: #C4C4C4;
     border-radius: 50%;
 }
 
-.main-team-content li{
+.main-team-content li {
     margin: 20px;
 }
 
-.main-team-content ul{
+.main-team-content ul {
     padding-top: 30px;
 }
 
-.main-team-content h1{
+.main-team-content h1 {
     color: #425FC6;
 }
 
-.cache-selection-allemagne, .cache-selection-japon, .cache-selection-belgique, .cache-selection-russie{
+.cache-selection-allemagne,
+.cache-selection-japon,
+.cache-selection-belgique,
+.cache-selection-russie {
     display: none;
 }
 
-.container-graph{
+.container-graph {
     height: 100%;
     width: 100%;
     display: flex;
 }
 
-.p1, .p2{
+.p1,
+.p2 {
     text-align: center;
 }
 
-.circle img{
+.circle img {
     height: 200px;
     width: 200px;
 }
 
-.perso img{
+.perso img {
     width: 260px;
 }
 
-.donnees h1{
+.donnees h1 {
     padding-top: 20px;
     padding-left: 50px;
 }
