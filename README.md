@@ -2,6 +2,24 @@
 
 # Data vizualisation Project
 
+## Projet "data visualisation" basé sur les retards des trains de France (SNCF).
+
+## Ce projet a pour but d'expliquer les raisons de ces retards ainsi que de les comparer avec celles des autres pays tels que:
+* Le Japon
+* L'Allemagne
+* La Belgique
+* Le Russie
+## Pour les caractéristiques des pays étudiés, nous détaillerons :
+* Le nom de la société ferroviaire
+* Le nombre de kilomètres parcourus par an
+* Le nombre de gares
+* Le nombre de passagers par an
+## Pour les retards, les éléments de comparaisons seront :
+*Les incidents
+*Les effectifs
+*La vitesse
+*L'affluence
+
 ## With Laravel framework
 
 ### Notion :
