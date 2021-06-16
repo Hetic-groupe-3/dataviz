@@ -307,7 +307,7 @@
         <!-- Partie graphiques -->
 
         <section class="donnees" id="sect-all">
-            <h1>TGV vs Shinkansen</h1>
+            <h1>TGV vs Train allemand</h1>
 
             <!-- Partie comparaison vitesse -->
 
@@ -343,27 +343,21 @@
                         <h2>TGV</h2>
                         <ul>
                             <li>
-                                <span>XXkm/h</span>
+                                <span><?= $speedAverageFrance ?>km/h</span>
                                 <p>Vitesse moyenne</p>
                             </li>
-                            <li>
-                                <span>XXkm/h</span>
-                                <p>Record Établis</p>
-                            </li>
+
                         </ul>
                     </div>
 
                     <div class="data-autre">
-                        <h2>Shinkansen</h2>
+                        <h2>Train Allemand</h2>
                         <ul>
                             <li>
-                               <span>XXkm/h</span>
+                               <span><?= $speedAverageAllemagne?>km/h</span>
                                 <p>Vitesse moyenne</p>
                             </li>
-                            <li>
-                                <span>XXkm/h</span>
-                                <p>Record Établis</p>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -528,14 +522,14 @@
                             <div class="carre-autre">
                                 <img src=" {{ asset('img/logojapon.png') }}" alt="">
                             </div>
-                            <p><?= $compagnyJapon?></p>
+                            <p><?= $compagnyJapan?></p>
                         </li>
                         <li>
                             <div class="carre-autre">
                                 <img src=" {{ asset('img/voieblanc.png') }}" alt="">
                             </div>
                                 <div class="detail-data-fr">
-                                    <p><?= $sizeRailwayJapon ?>km</p>
+                                    <p><?= $sizeRailwayJapan ?>km</p>
                                     <p>de voies</p>
                                 </div>
                         </li>
@@ -544,7 +538,7 @@
                                 <img src=" {{ asset('img/gareblanc.png') }}" alt="">
                             </div>
                             <div class="detail-data-fr">
-                                <p><?= $numberStationJapon ?></p>
+                                <p><?= $numberStationJapan ?></p>
                                 <p>de gares</p>
                             </div>
                         </li>
@@ -553,7 +547,7 @@
                                 <img src=" {{ asset('img/personnesblanc.png') }}" alt="">
                             </div>
                             <div class="detail-data-fr">
-                                <p><?= $frequentationJapon?></p>
+                                <p><?= $frequentationJapan?></p>
                                 <p>passagers / jour</p>
                             </div>
                         </li>
@@ -609,27 +603,21 @@
                         <h2>TGV</h2>
                         <ul>
                             <li>
-                                <span>XXkm/h</span>
+                                <span><?=$speedAverageFrance?>km/h</span>
                                 <p>Vitesse moyenne</p>
                             </li>
-                            <li>
-                                <span>XXkm/h</span>
-                                <p>Record Établis</p>
-                            </li>
+
                         </ul>
                     </div>
 
                     <div class="data-autre">
-                        <h2>Shinkansen</h2>
+                        <h2><?= $compagnyJapan?></h2>
                         <ul>
                             <li>
-                               <span>XXkm/h</span>
+                               <span><?= $speedAverageJapan?>km/h</span>
                                 <p>Vitesse moyenne</p>
                             </li>
-                            <li>
-                                <span>XXkm/h</span>
-                                <p>Record Établis</p>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -875,27 +863,21 @@
                         <h2>TGV</h2>
                         <ul>
                             <li>
-                                <span>XXkm/h</span>
+                                <span><?=$speedAverageFrance?>km/h</span>
                                 <p>Vitesse moyenne</p>
                             </li>
-                            <li>
-                                <span>XXkm/h</span>
-                                <p>Record Établis</p>
-                            </li>
+
                         </ul>
                     </div>
 
                     <div class="data-autre">
-                        <h2>Shinkansen</h2>
+                        <h2>Train Belge</h2>
                         <ul>
                             <li>
-                               <span>XXkm/h</span>
+                               <span><?= $speedAverageBelgique?>km/h</span>
                                 <p>Vitesse moyenne</p>
                             </li>
-                            <li>
-                                <span>XXkm/h</span>
-                                <p>Record Établis</p>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -1105,7 +1087,7 @@
         <!-- Partie graphiques -->
 
         <section class="donnees" id="sect-rus">
-            <h1>TGV vs Shinkansen</h1>
+            <h1>TGV vs Train Transsiberien</h1>
 
             <!-- Partie comparaison vitesse -->
 
@@ -1141,27 +1123,21 @@
                         <h2>TGV</h2>
                         <ul>
                             <li>
-                                <span>XXkm/h</span>
+                                <span><?=$speedAverageFrance?>km/h</span>
                                 <p>Vitesse moyenne</p>
                             </li>
-                            <li>
-                                <span>XXkm/h</span>
-                                <p>Record Établis</p>
-                            </li>
+
                         </ul>
                     </div>
 
                     <div class="data-autre">
-                        <h2>Shinkansen</h2>
+                        <h2>Train Transsiberien</h2>
                         <ul>
                             <li>
-                               <span>XXkm/h</span>
+                               <span><?= $speedAverageRussie?>km/h</span>
                                 <p>Vitesse moyenne</p>
                             </li>
-                            <li>
-                                <span>XXkm/h</span>
-                                <p>Record Établis</p>
-                            </li>
+
                         </ul>
                     </div>
                 </div>

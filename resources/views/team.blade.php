@@ -16,7 +16,7 @@
     <header>
         <section class="container-header">
             <div class="top-content">
-                <a href="index.html">Retour</a>
+                <a href="index.php">Retour</a>
             </div>
             <div class="title">
                 <hr>

@@ -551,6 +551,15 @@ header{
     text-align: center;
 }
 
+.circle img{
+    height: 200px;
+    width: 200px;
+}
+
+.perso img{
+    width: 260px;
+}
+
 .donnees h1{
     padding-top: 20px;
     padding-left: 50px;
