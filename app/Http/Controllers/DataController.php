@@ -72,6 +72,9 @@ class DataController extends Controller
             'mobilityCrossingStopSignalJapan' => $japanData->incident->mobilityIncident->Crossing_stop_signal,
             'mobilityOtherJapan' => $japanData->incident->mobilityIncident->other,
 
+
+
+
         ]);
     }
 }
