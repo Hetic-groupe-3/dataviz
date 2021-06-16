@@ -13,18 +13,15 @@ class DataController extends Controller
 {
     public function data()
     {
-        $franceData = Countrys::find(1);
-        //var_dump($franceData->name);
-        //var_dump($franceData->incident->stations_number);
-        //var_dump($franceData->organisation->station_frequentation);
+        $franceData = Countrys::find(1);    
+        $japanData = Countrys::find(2);
+        $allemagneData = Countrys::find(3);
+        $belgiqueData = Countrys::find(4);
+        $russieData = Countrys::find(5);
+
 
     
-        $japanData = Countrys::find(2);
-        //var_dump($japanData->name);
-        //var_dump($japanData->incident->stations_number);
-        //var_dump($japanData->organisation->station_frequentation);
-    
-        return view('index', [
+        return view('donnees', [
 
             // French data 
             'nameFrance' => $franceData->name,

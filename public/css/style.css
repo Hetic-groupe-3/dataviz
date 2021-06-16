@@ -1,359 +1,557 @@
-:root {
-    /* COLOR */
+/* Init */
 
-    /* Main color of the site */
-    --main-color: #425FC6;
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
 
-    /* FONT */
-
-    /* Font color */
-    --font-color: #000000;
-    /* Font use in the site */
-    --main-font-family: 'Spinnaker', sans-serif;
-    --sen-font-family: 'Sen', sans-serif;
-    /* Font Size */
-    --title-font-size: 3vw;
-    --subtitle-font-size: 2.5vw;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-* {
-    font-family: var(--main-font-family);
+*::selection{
+    background-color: #425FC6;
+    color: white;
 }
 
-/* HERO BANNER */
-#heroBanner {
-    background: var(--main-color);
+ul{
+    list-style: none;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    font-family: 'Sen', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ---------- Header ---------- */
+
+header{
     height: 100vh;
-
+    width: 100vw;
+    background-color: #425FC6;
+    background-image: url('assets/fond-head.jpg');
+    background-position: 100% 70%;
 }
 
-#heroBanner nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/* Bouton notre équipe */
 
-}
-
-
-#heroBanner nav span {
-    font-size: var(--title-font-size);
-    color: var(--font-color);
-    width: 100px;
-    padding-top: 40px;
-    margin-left: 90px;
-}
-
-#heroBanner nav button {
-    float: right;
-    height: 3vw;
-    width: 8vw;
-    margin-top: 40px;
-    margin-right: 90px;
+.top-content a{
+    position: absolute;
+    right: 30px;
+    top: 30px;
     border-radius: 40px;
-    border: none;
-    background-color: var(--font-color);
-    color: #FFF;
-    font-size: 1.5vw;
-}
-
-#heroBanner h2:nth-child(2) {
+    width: 150px;
+    height: 45px;
+    background-color: #425FC6;
+    color: white;
     display: flex;
-    float: left;
-    margin-top: 250px;
-    padding-left: 90px;
-    padding-top: 5px;
-    border-top: solid 2px black;
-    font-size: 3.5vw;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .5s, color .5s;
 }
 
-#heroBanner h2:nth-child(3) {
+.top-content a:hover{
+    background-color: white;
+    border: 1px solid #425FC6;
+    color: black;
+}
+
+/* Titre du header */
+
+.title{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    float: right;
-    padding-right: 90px;
-    padding-top: 5px;
-    margin-top: 20px;
-    border-bottom: solid 2px black;
-    font-size: 3.5vw;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    flex-direction: column;
 }
 
-
-#heroBanner p:nth-child(4) {
-    display: flex;
-    margin-left: 90px;
-    margin-top: 630px;
+.title h1:nth-child(2){
+    margin-right: 280px;
 }
 
-#heroBanner p:nth-child(5) {
-    display: flex;
-    float: right;
-    margin-right: 90px;
-}
-
-/*TRAJET & INTRODUCTION */
-
-#roadMap {
-    display: flex;
-}
-
-/*LEFT PART OF THE PAGE*/
-#trajet {
-    height: 101vh;
-    width: 50%;
-    background-color: #F1F1F1;
-    border-right: 2px solid #425FC6;
-
-}
-
-#trajet h1 {
-    margin-top: 35px;
-    margin-left: 90px;
-    font-family: var(--sen-font-family);
-    font-weight: 700;
-    font-size: var(--title-font-size);
-}
-
-#trajet p:nth-child(2) {
-    font-size: var(--subtitle-font-size);
-    padding-top: 100px;
+.title h1:nth-child(3){
     margin-left: 400px;
 }
 
-#trajet p {
-    font-size: var(--subtitle-font-size);
-    padding-top: 100px;
-    margin-left: 150px;
+.title hr:nth-child(1){
+    width: 70%;
+    margin-right: 450px;
 }
 
-#trajet h4 {
-    margin-top: 30px;
-    margin-left: 250px;
+.title hr:nth-child(4){
+    width: 62%;
+    margin-left: 550px;
 }
 
-#trajet h4:last-child {
-    padding-bottom: 20px;
+/* Elements bas du header */
+
+.bot-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
 }
 
+.bot-content p:nth-child(1){
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-weight:700;
+}
 
+.bot-content p:nth-child(2){
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-weight:700;
+    font-size: 2em;
+    color: white;
+}
 
-/*RIGHT PART OF THE PAGE*/
-#intro {
-    height: 101vh;
-    width: 50%;
-    background-color: #F1F1F1;
+.scroll-top{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-top a{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
-#intro h1 {
-    margin-top: 35px;
-    margin-left: 90px;
-    font-family: var(--sen-font-family);
+.scroll-top p{
     font-weight: 700;
-    font-size: var(--title-font-size);
-
+    color: white;
 }
 
-#intro p {
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-    font-size: 1.5vw;
-}
-
-
-#intro p span {
-    color: var(--main-color);
-    font-weight: 700;
-}
-
-#intro svg {
+.scroll-top a::before{
+    content: "";
+    height: 30%;
+    width: 30%;
+    transform: rotate(45deg);
+    border-bottom: solid black 5px;
+    border-right: solid black 5px;
+    border-radius: 5px;
     position: relative;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    margin-top: 100px;
-    padding-bottom: 44px;
+    transition: transform 1s;
 }
 
-/* INFORMATIONS */
-#info {
+.scroll-top a:hover::before{
+    transform: translateY(50px) rotate(45deg);
+}
+
+/* Map selection */
+
+.map > div{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid #425FC6;
+    margin-left: -100px;
+}
+
+.map-selection{
+    width: 100%;
+    padding-left: 150px;
+    height: 100%;
+}
+
+.map-selection h1{
+    position: absolute;
+    margin-top: 30px;
+}
+
+.map-belgique h1, .map-japon h1, .map-allemagne h1, .map-russie h1{
+    position: relative;
+    top: 200px;
+    left: 30%;
+}
+
+.map svg{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    stroke: #b3b3b3;
+    fill: rgb(245, 245, 245);
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    margin-left: 20px;
+}
+
+.map path{
+    transition: fill .2s;
+}
+
+.map svg path:hover{
+    fill: #425FC6;
+    cursor: pointer;
+}
+
+/* Comparaison des compagnies */
+
+.compare{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url('assets/fond-compar.png');
+    background-size: 55% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.data-fr, .data-autre{
+    height: 100%;
+    width: 50%;
+}
+
+.intro-content{
+    height: 100vh;
+    width: 100vw;
+}
+
+.intro{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.trajet{
+    border-bottom: 2px solid #425FC6;
+}
+
+.donnees{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.donnees a{
+    cursor: pointer;
+}
+
+.intro h1, .data-fr h1, .data-compare-autre h1, .vitesse h1{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.data-fr h1{
+    color: #425FC6;
+}
+
+.data-compare-autre h1{
+    color: white;
+}
+
+.intro h1{
+    font-size: 3em;
+}
+
+.text-intro{
+    width: 600px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.text-intro p{
+    font-size: 1.5em;
+}
+
+.slide-citation{
+    margin-top: 300px;
+    font-size: 1.2em;
+    color: rgb(158, 158, 158);
+    width: 100%;
+}
+
+.slide-citation span{
+    color: #425FC6;
+}
+
+.slide-citation ul{
+    text-align: center;
+}
+
+.slide-citation button{
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    height: 17px;
+    width: 17px;
+    margin: 7px;
+    outline: none;
+    border: none;
+    font-size: 0;
+}
+
+.slide-citation button:active{
+    background-color: #425FC6;
+}
+
+.slide-citation button:hover{
+    cursor: pointer;
+}
+
+.slick-dots{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.carre-fr, .carre-autre{
+    height: 75px;
+    width: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* PART OF FRANCE*/
-#france {
-    height: 100vh;
-    width: 50%;
-    background-color: #F1F1F1;
-
-}
-
-#france h1 {
-    margin-top: 35px;
-    margin-left: 90px;
-    font-family: var(--sen-font-family);
-    font-weight: 700;
-    font-size: var(--title-font-size);
-
-}
-
-.contained {
+.liste-data-fr li, .liste-data-autre li{
     display: flex;
     align-items: center;
-    margin-top: 50px;
-    margin-left: 90px;
+    margin: 50px;
+    padding-top: 10px;
 }
 
-.contained p {
+.liste-data-fr p:nth-child(1){
+    font-size: 1.5em;
     margin-left: 30px;
-    font-size: 1.7vw;
+    color: #425FC6;
 }
 
-
-
-/* PART OF JAPON */
-
-#japon {
-    float: right;
-    height: 100vh;
-    width: 50%;
-    background-color: #425FC6;
-    border-right: 2px solid #425FC6;
-    color: #FFF;
+.liste-data-fr p:nth-child(2){
+    margin-left: 30px;
 }
 
-#japon h1 {
-    margin-top: 35px;
-    margin-left: 90px;
-    font-family: var(--sen-font-family);
+.liste-data-autre p:nth-child(1){
+    font-size: 1.5em;
+    margin-left: 30px;
+    color: white;
+}
+
+.liste-data-autre p:nth-child(2){
+    margin-left: 30px;
+}
+
+.carre-autre img{
+    height: 50px;
+    width: 50px;
+}
+
+.carre-fr img{
+    height: 50px;
+    width: 50px;
+}
+
+.link a{
+    font-size: 1.5em;
+    color: #425FC6;
     font-weight: 700;
-    font-size: var(--title-font-size);
-
 }
 
-/*COMPARISON */
-#comparison {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--main-color);
-    color: #F1F1F1;
+.link a.not-active{
+    color: black;
+    font-weight: 500;
 }
 
-#comparison h1 {
-    padding-top: 35px;
-    margin-left: 90px;
-    font-family: var(--sen-font-family);
-    font-weight: 700;
-    font-size: var(--title-font-size);
-
+.link li:nth-child(1){
+    margin-left: 50px;
 }
 
-#comparison h4 {
-    margin-top: 20px;
-    margin-left: 90px;
-    font-size: 2vw;
+.link li{
+    margin-top: 10px;
+    padding-right: 20px;
 }
 
-#comparison figure {
-    height: 100px;
-    border-bottom: 1px solid #F1F1F1;
-
-}
-
-#trainShinkansen {
+.link ul{
     display: flex;
-    float: right;
-    width: 300px;
+    list-style-type: none;
+}
+
+.link li.not-active {
+    text-decoration:line-through;
+}
+
+.ligne1{
+    width: 100%;
+    height: 150px;
     margin-top: 100px;
-    margin-right: 200px;
+    border-top: solid 2px black;
 }
 
-#trainTgv {
+.ligne2{
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    border-top: solid 2px black;
+}
+
+.ligne1 img{
+    height: 180px;
+    margin-top: -45px;
+    margin-left: 800px;
+
+}
+.ligne2 img{
+    height: 180px;
+    margin-top: -45px;
+}
+
+.data-train{
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    bottom: 0;
     display: flex;
-    float: left;
-    width: 300px;
-    margin-top: 93px;
-    margin-left: 300px;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#countryC {
+.data-train span{
+ color: #425FC6;
+}
+
+.data-tgv, .data-autre{
+    width: 30%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100vw;
-    margin-top: 150px;
+    padding: 20px;
 }
 
-#countryC div {
+.data-train ul{
+    list-style: none;
+}
+
+.data-train li{
     margin-top: 50px;
 }
-
-#countryC h2 {
-    margin-left: 90px;
-    font-size: var(--subtitle-font-size);
+.affichage{
+    display: block;
+}
+.affichage2{
+    display: block;
 }
 
-#tgv {
-    width: 50%;
+.affichage3{
+    display: block;
+}
+.affichage4{
+    display: block;
+}
+.cache{
+    display: none;
 }
 
-#tgv h3 {
-    margin-top: 50px;
-
+.graph1{
+    height: 80%;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 50px;
 }
 
-#shinkansen {
-    width: 50%;
-
-}
-
-#shinkansen h3 {
-    margin-top: 50px;
-
-}
-
-.chart-container {
-    position: relative;
+.graph2{
+    height: 40%;
+    width: 40%;
+    padding-top: 75px;
     margin: auto;
-    height: 70vh;
-    width: 70vw;
-    margin-right: 300px;
 }
 
-#employees {
-    display: flex;
+.team{
     height: 100vh;
-    background-color: #F1F1F1;
-    align-items: center;
+    width: 100vw;
 }
 
-#employees h2 {
-    position: relative;
-    margin-top: -700px;
-    margin-left: 90px;
-    width: 300px;
-    font-family: var(--sen-font-family);
-    font-weight: 700;
-    font-size: var(--title-font-size);
+.top-team-content{
+    width: 100%;
+    height: 20px;
+    padding: 20px;
 }
 
-#failures {
+.top-team-content span{
+    color: #C4C4C4;
+}
+
+.main-team-content{
     display: flex;
-    height: 100vh;
-    background-color: #F1F1F1;
+    justify-content:space-evenly;
     align-items: center;
+    height: 90%;
 }
 
-#failures h2 {
-    position: relative;
-    margin-top: -700px;
-    margin-left: 90px;
-    width: 300px;
-    font-family: var(--sen-font-family);
-    font-weight: 700;
-    font-size: var(--title-font-size);
+.main-team-content .p1, .main-team-content .p2{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+}
+
+.main-team-content li{
+    margin: 20px;
+}
+
+.main-team-content ul{
+    padding-top: 30px;
+}
+
+.main-team-content h1{
+    color: #425FC6;
+}
+
+.cache-selection-allemagne, .cache-selection-japon, .cache-selection-belgique, .cache-selection-russie{
+    display: none;
+}
+
+.container-graph{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.p1, .p2{
+    text-align: center;
+}
+
+.donnees h1{
+    padding-top: 20px;
+    padding-left: 50px;
 }
