@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -416,9 +415,6 @@
                     <div class="graph2">
                         <canvas id="graph-all-2"></canvas>
                     </div>
-                    <div class="graph2">
-                        <canvas id="graph-all-3"></canvas>
-                    </div>
                 </div>
             </div>
 
@@ -675,9 +671,6 @@
                 <div class="container-graph">
                     <div class="graph2">
                         <canvas id="graph-jpn-2"></canvas>
-                    </div>
-                    <div class="graph2">
-                        <canvas id="graph-jpn-3"></canvas>
                     </div>
                 </div>
             </div>
@@ -936,9 +929,7 @@
                     <div class="graph2">
                         <canvas id="graph-bel-2"></canvas>
                     </div>
-                    <div class="graph2">
-                        <canvas id="graph-bel-3"></canvas>
-                    </div>
+
                 </div>
             </div>
 
@@ -1196,9 +1187,6 @@
                     <div class="graph2">
                         <canvas id="graph-rus-2"></canvas>
                     </div>
-                    <div class="graph2">
-                        <canvas id="graph-rus-3"></canvas>
-                    </div>
                 </div>
             </div>
 
@@ -1346,121 +1334,10 @@
 
     </script>
 
-<script>
-    var ctx = document.getElementById('graph-all-3').getContext('2d');
 
-    var data = {
-        labels: [
-        'Problèmes techniques',
-        'Problèmes humains'
-    ],
-    datasets: [{
-        label: 'My First Dataset',
-        data: [500, 500],
-        backgroundColor: [
-        'rgb(255, 99, 132)',
-        '#425FC6',
-        ],
-        hoverOffset: 4
-    }]
-    }
 
-    var options
 
-    var config = {
-    type: 'doughnut',
-    data,
-    };
 
-    var graph2 = new Chart(ctx, config);
-</script>
-
-<script>
-    var ctx = document.getElementById('graph-jpn-3').getContext('2d');
-
-    var data = {
-        labels: [
-        'Problèmes techniques',
-        'Problèmes humains'
-    ],
-    datasets: [{
-        label: 'My First Dataset',
-        data: [500, 500],
-        backgroundColor: [
-        'rgb(255, 99, 132)',
-        '#425FC6',
-        ],
-        hoverOffset: 4
-    }]
-    }
-
-    var options
-
-    var config = {
-    type: 'doughnut',
-    data,
-    };
-
-    var graph2 = new Chart(ctx, config);
-</script>
-
-<script>
-    var ctx = document.getElementById('graph-bel-3').getContext('2d');
-
-    var data = {
-        labels: [
-        'Problèmes techniques',
-        'Problèmes humains'
-    ],
-    datasets: [{
-        label: 'My First Dataset',
-        data: [500, 500],
-        backgroundColor: [
-        'rgb(255, 99, 132)',
-        '#425FC6',
-        ],
-        hoverOffset: 4
-    }]
-    }
-
-    var options
-
-    var config = {
-    type: 'doughnut',
-    data,
-    };
-
-    var graph2 = new Chart(ctx, config);
-</script>
-
-<script>
-    var ctx = document.getElementById('graph-rus-3').getContext('2d');
-
-    var data = {
-        labels: [
-        'Problèmes techniques',
-        'Problèmes humains'
-    ],
-    datasets: [{
-        label: 'My First Dataset',
-        data: [500, 500],
-        backgroundColor: [
-        'rgb(255, 99, 132)',
-        '#425FC6',
-        ],
-        hoverOffset: 4
-    }]
-    }
-
-    var options
-
-    var config = {
-    type: 'doughnut',
-    data,
-    };
-
-    var graph2 = new Chart(ctx, config);
-</script>
 
 
     <script>
@@ -1468,12 +1345,12 @@
 
         var data = {
             labels: [
-            'Problèmes techniques',
-            'Problèmes humains'
+            'Problèmes techniques SNCF ',
+            'Problèmes techniques Deutsch Bahn '
         ],
         datasets: [{
             label: 'My First Dataset',
-            data: [500, 500],
+            data: [<?= $railwayIncidentNumberFrance ?>, <?= $railwayIncidentNumberAllemagne ?>],
             backgroundColor: [
             'rgb(255, 99, 132)',
             '#425FC6',
@@ -1497,12 +1374,12 @@
 
         var data = {
             labels: [
-            'Problèmes techniques',
-            'Problèmes humains'
+            'Problèmes techniques SNCF',
+            'Problèmes techniques Japan Railway'
         ],
         datasets: [{
             label: 'My First Dataset',
-            data: [500, 500],
+            data: [<?= $railwayIncidentNumberFrance ?>, <?= $railwayIncidentNumberJapan?>],
             backgroundColor: [
             'rgb(255, 99, 132)',
             '#425FC6',
@@ -1526,12 +1403,12 @@
 
         var data = {
             labels: [
-            'Problèmes techniques',
-            'Problèmes humains'
+            'Problèmes techniques SNCF',
+            'Problèmes techniques SNCB'
         ],
         datasets: [{
             label: 'My First Dataset',
-            data: [500, 500],
+            data: [<?= $railwayIncidentNumberFrance ?>, <?= $railwayIncidentNumberBelgique?>],
             backgroundColor: [
             'rgb(255, 99, 132)',
             '#425FC6',
@@ -1554,20 +1431,20 @@
         var ctx = document.getElementById('graph-rus-2').getContext('2d');
 
         var data = {
-            labels: [
-            'Problèmes techniques',
-            'Problèmes humains'
+        labels: [
+        'Problèmes techniques SNCF ',
+        'Problèmes techniques RZD'
+    ],
+    datasets: [{
+        label: 'My First Dataset',
+        data: [<?= $railwayIncidentNumberFrance ?>, <?= $railwayIncidentNumberRussie ?>],
+        backgroundColor: [
+        'rgb(255, 99, 132)',
+        '#425FC6',
         ],
-        datasets: [{
-            label: 'My First Dataset',
-            data: [500, 500],
-            backgroundColor: [
-            'rgb(255, 99, 132)',
-            '#425FC6',
-            ],
-            hoverOffset: 4
-        }]
-        }
+        hoverOffset: 4
+    }]
+    }
 
         var options
 
@@ -1582,17 +1459,17 @@
     <script>
         var ctx = document.getElementById('graph-all-1').getContext('2d');
 
-        var data = {
-            labels: ['Effectif total', 'Cadre', 'Employés', '???'],
+          var data = {
+            labels: ["Nombre d'employer total"],
             datasets: [
             {
           label: "TGV",
           backgroundColor: "rgb(255, 99, 132)",
-          data: [133,221,783,2478],
+          data: [<?= $numberEmployeesFrance ?>],
         }, {
-          label: "Shinkansen",
+          label: "Deutsch Bahn",
           backgroundColor: "#425FC6",
-          data: [408,547,675,734]
+          data: [<?= $numberEmployeesAllemagne?>]
         }
             ]
         }
@@ -1601,15 +1478,23 @@
             legend: {
                     fontColor: 'white',
             }
+        
         }
 
         var config = {
         type: 'bar',
         data,
-        options: {
-            indexAxis: 'y',
+       options: {
+        scales: {
+        y: {
+            type: 'linear',
+            min: 0,
+            max: 310000
         }
-        };
+        },
+      
+    }
+    };
 
         var graph1 = new Chart(ctx, config);
 
@@ -1620,16 +1505,16 @@
         var ctx = document.getElementById('graph-jpn-1').getContext('2d');
 
         var data = {
-            labels: ['Effectif total', 'Cadre', 'Employés', '???'],
+            labels: ["Nombre  d'employer total"],
             datasets: [
             {
           label: "TGV",
           backgroundColor: "rgb(255, 99, 132)",
-          data: [133,221,783,2478],
+          data: [<?= $numberEmployeesFrance ?>],
         }, {
           label: "Shinkansen",
           backgroundColor: "#425FC6",
-          data: [408,547,675,734]
+          data: [ <?= $numberEmployeesJapan ?>]
         }
             ]
         }
@@ -1643,10 +1528,17 @@
         var config = {
         type: 'bar',
         data,
-        options: {
-            indexAxis: 'y',
+       options: {
+        scales: {
+        y: {
+            type: 'linear',
+            min: 0,
+            max: 310000
         }
-        };
+        },
+      
+    }
+    };
 
         var graph1 = new Chart(ctx, config);
 
@@ -1657,16 +1549,16 @@
         var ctx = document.getElementById('graph-bel-1').getContext('2d');
 
         var data = {
-            labels: ['Effectif total', 'Cadre', 'Employés', '???'],
+            labels: ["Nombre d'employer total"],
             datasets: [
             {
           label: "TGV",
           backgroundColor: "rgb(255, 99, 132)",
-          data: [133,221,783,2478],
+          data: [<?= $numberEmployeesFrance ?>],
         }, {
-          label: "Shinkansen",
+          label: "SNCB",
           backgroundColor: "#425FC6",
-          data: [408,547,675,734]
+          data: [<?= $numberEmployeesBelgique ?>]
         }
             ]
         }
@@ -1675,15 +1567,23 @@
             legend: {
                     fontColor: 'white',
             }
+        
         }
 
         var config = {
         type: 'bar',
         data,
-        options: {
-            indexAxis: 'y',
+       options: {
+        scales: {
+        y: {
+            type: 'linear',
+            min: 0,
+            max: 200000
         }
-        };
+        },
+      
+    }
+    };
 
         var graph1 = new Chart(ctx, config);
 
@@ -1694,16 +1594,16 @@
         var ctx = document.getElementById('graph-rus-1').getContext('2d');
 
         var data = {
-            labels: ['Effectif total', 'Cadre', 'Employés', '???'],
+            labels: ["Nombre d'emplyer total"],
             datasets: [
             {
           label: "TGV",
           backgroundColor: "rgb(255, 99, 132)",
-          data: [133,221,783,2478],
+          data: [<?= $numberEmployeesFrance ?>],
         }, {
-          label: "Shinkansen",
+          label: "RZD",
           backgroundColor: "#425FC6",
-          data: [408,547,675,734]
+          data: [<?= $numberEmployeesRussie ?>]
         }
             ]
         }
@@ -1717,9 +1617,7 @@
         var config = {
         type: 'bar',
         data,
-        options: {
-            indexAxis: 'y',
-        }
+       
         };
 
         var graph1 = new Chart(ctx, config);
@@ -1731,16 +1629,16 @@
     var ctx = document.getElementById('graph-all-4').getContext('2d');
 
     var data = {
-        labels: ['Passagers par rames', 'Passagers moyens', 'Passagers totaux'],
+        labels: ['Passagers moyens par jours'],
         datasets: [
         {
       label: "TGV",
       backgroundColor: "rgb(255, 99, 132)",
-      data: [133,221,783,2478],
+      data: [<?= $frequentationFrance ?>],
     }, {
-      label: "Shinkansen",
+      label: "Deutsch Bahn",
       backgroundColor: "#425FC6",
-      data: [408,547,675,734]
+      data: [<?= $frequentationAllemagne ?>]
     }
         ]
     }
@@ -1766,16 +1664,16 @@
     var ctx = document.getElementById('graph-jpn-4').getContext('2d');
 
     var data = {
-        labels: ['Passagers par rames', 'Passagers moyens', 'Passagers totaux'],
+        labels: ['Passagers moyens par jours'],
         datasets: [
         {
       label: "TGV",
       backgroundColor: "rgb(255, 99, 132)",
-      data: [133,221,783,2478],
+      data: [<?= $frequentationFrance ?>],
     }, {
       label: "Shinkansen",
       backgroundColor: "#425FC6",
-      data: [408,547,675,734]
+      data: [<?= $frequentationJapan ?>]
     }
         ]
     }
@@ -1801,16 +1699,16 @@
     var ctx = document.getElementById('graph-bel-4').getContext('2d');
 
     var data = {
-        labels: ['Passagers par rames', 'Passagers moyens', 'Passagers totaux'],
+        labels: ['Passagers moyens par jours'],
         datasets: [
         {
       label: "TGV",
       backgroundColor: "rgb(255, 99, 132)",
-      data: [133,221,783,2478],
+      data: [<?= $frequentationFrance ?>],
     }, {
-      label: "Shinkansen",
+      label: "SNCB",
       backgroundColor: "#425FC6",
-      data: [408,547,675,734]
+      data: [<?= $frequentationBelgique ?>]
     }
         ]
     }
@@ -1835,20 +1733,21 @@
 <script>
     var ctx = document.getElementById('graph-rus-4').getContext('2d');
 
-    var data = {
-        labels: ['Passagers par rames', 'Passagers moyens', 'Passagers totaux'],
+   var data = {
+        labels: ['Passagers moyens par jours'],
         datasets: [
         {
       label: "TGV",
       backgroundColor: "rgb(255, 99, 132)",
-      data: [133,221,783,2478],
+      data: [<?= $frequentationFrance ?>],
     }, {
-      label: "Shinkansen",
+      label: "RZD",
       backgroundColor: "#425FC6",
-      data: [408,547,675,734]
+      data: [<?= $frequentationRussie?>]
     }
         ]
     }
+
 
     var options = {
         legend: {
