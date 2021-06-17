@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>v2</title>
+    <title>Vous aussi votre train est souvent en retard ?</title>
 </head>
 <body>
 
@@ -17,7 +17,7 @@
     <header>
         <section class="container-header">
             <div class="top-content">
-                <a href="team.blade.php">Notre équipe</a>
+                {{-- <a href="team.blade.php">Notre équipe</a> --}}
             </div>
             <div class="title">
                 <hr>
