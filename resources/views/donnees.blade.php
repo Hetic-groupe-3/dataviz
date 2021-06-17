@@ -237,15 +237,6 @@
                                 <p>passagers / jour</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="carre-fr">
-                                <img src=" {{ asset('img/habitants.png') }}" alt="">
-                            </div>
-                            <div class="detail-data-fr">
-                                <p>XX</p>
-                                <p>nombre d'habitants</p>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -259,7 +250,7 @@
                     <ul>
                         <li>
                             <div class="carre-autre">
-                                <img src=" {{ asset('img/logojapon.png') }}" alt="">
+                                <img src=" {{ asset('img/Deutsche-Bahn-Logo.png') }}" alt="">
                             </div>
                             <p><?= $compagnyAllemagne?></p>
                         </li>
@@ -290,16 +281,6 @@
                                 <p>passagers / jour</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="carre-autre">
-                                <img src=" {{ asset('img/habitantsblanc.png') }}" alt="">
-                            </div>
-                            <div class="detail-data-fr">
-                                <p>XX</p>
-                                <p>nombre d'habitants</p>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
         </section>
 
@@ -495,14 +476,6 @@
                             </div>
                         </li>
                         <li>
-                            <div class="carre-fr">
-                                <img src=" {{ asset('img/habitants.png') }}" alt="">
-                            </div>
-                            <div class="detail-data-fr">
-                                <p>XX</p>
-                                <p>nombre d'habitants</p>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -545,15 +518,6 @@
                             <div class="detail-data-fr">
                                 <p><?= $frequentationJapan?></p>
                                 <p>passagers / jour</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="carre-autre">
-                                <img src=" {{ asset('img/habitantsblanc.png') }}" alt="">
-                            </div>
-                            <div class="detail-data-fr">
-                                <p>XX</p>
-                                <p>nombre d'habitants</p>
                             </div>
                         </li>
                     </ul>
@@ -751,15 +715,6 @@
                                 <p>passagers / jour</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="carre-fr">
-                                <img src=" {{ asset('img/habitants.png') }}" alt="">
-                            </div>
-                            <div class="detail-data-fr">
-                                <p>XX</p>
-                                <p>nombre d'habitants</p>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -773,7 +728,7 @@
                     <ul>
                         <li>
                             <div class="carre-autre">
-                                <img src=" {{ asset('img/logojapon.png') }}" alt="">
+                                <img src=" {{ asset('img/Logo-SNCB.png') }}" alt="">
                             </div>
                             <p><?=$compagnyBelgique?></p>
                         </li>
@@ -802,15 +757,6 @@
                             <div class="detail-data-fr">
                                 <p><?= $frequentationBelgique?></p>
                                 <p>passagers / jour</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="carre-autre">
-                                <img src=" {{ asset('img/habitantsblanc.png') }}" alt="">
-                            </div>
-                            <div class="detail-data-fr">
-                                <p>XX</p>
-                                <p>nombre d'habitants</p>
                             </div>
                         </li>
                     </ul>
@@ -1009,15 +955,7 @@
                                 <p>passagers / jour</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="carre-fr">
-                                <img src=" {{ asset('img/logosncf.png') }}" alt="">
-                            </div>
-                            <div class="detail-data-fr">
-                                <p>XX</p>
-                                <p>nombre d'habitants</p>
-                            </div>
-                        </li>
+                    
                     </ul>
                 </div>
             </div>
@@ -1031,7 +969,7 @@
                     <ul>
                         <li>
                             <div class="carre-autre">
-                                <img src=" {{ asset('img/logojapon.png') }}" alt="">
+                                <img src=" {{ asset('img/logo-rzd.png') }}" alt="">
                             </div>
                             <p><?= $compagnyRussie?></p>
                         </li>
@@ -1062,15 +1000,7 @@
                                 <p>passagers / jour</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="carre-autre">
-                                <img src=" {{ asset('img/habitantsblanc.png') }}" alt="">
-                            </div>
-                            <div class="detail-data-fr">
-                                <p>XX</p>
-                                <p>nombre d'habitants</p>
-                            </div>
-                        </li>
+                       
                     </ul>
                 </div>
         </section>
